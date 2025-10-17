@@ -73,13 +73,13 @@
                                     <td class="actions">
                                         <div class="actionsContainer">
                                             <!-- Utiliser un lien GET vers le contrôleur de modification (le contrôleur accepte aussi GET id) -->
-                                            <a href="index.php?m2lMP=modifierIntervenant&id=<?= $intervenant->getIdIntervenant() ?>" class="btnModifier btnModifierSmall">✏️ Modifier</a>
+                                            <a href="index.php?m2lMP=modifierIntervenant&id=<?= $intervenant->getIdIntervenant() ?>" class="btnModifier btnModifierSmall"> Modifier</a>
 
                                             <form method="post" action="index.php" class="inlineFormDelete" onsubmit="return confirm('Êtes-vous sûr de vouloir supprimer cet intervenant ?');">
                                                 <input type="hidden" name="m2lMP" value="supprimerIntervenant">
                                                 <input type="hidden" name="id_intervenant" value="<?= $intervenant->getIdIntervenant() ?>">
                                                 <?= csrf_input() ?>
-                                                <input type="submit" value="🗑️ Supprimer" class="btnSupprimer btnSupprimerSmall">
+                                                <input type="submit" value="Supprimer" class="btnSupprimer btnSupprimerSmall">
                                             </form>
                                         </div>
                                     </td>
