@@ -1,0 +1,1161 @@
+@charset "ISO-8859-1";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+  font-family: sans-serif;
+  background-color: #f0f0f0
+}
+
+/****************************************************/
+/*styles pour le conteneur                             */
+/****************************************************/
+.conteneur{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	font-size: 0px;
+}
+
+/****************************************************/
+/*styles pour le header                             */
+/****************************************************/
+header {
+	height: 200px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+    background-color: transparent;
+  }
+
+/****************************************************/
+/*styles pour la zone centrale de la page           */
+/****************************************************/
+main {
+	margin: 200px;
+	padding: 0px;
+	min-height: 600px;
+	background-color: #f0f0f0;
+ 	font-size: 0px;
+ 	margin-top: 200px;
+}
+
+
+
+/**********************************************************************/
+/*styles pour la zone gauche de la zone centrale de la page           */
+/**********************************************************************/
+.gauche {
+	display: inline-block;	
+	background-color: #fff0f0;
+	width: 20%;
+	vertical-align: top;
+	font-size: 15px;
+}
+
+/**********************************************************************/
+/*styles pour la zone droite de la zone centrale de la page           */
+/**********************************************************************/
+.droite {
+	display: inline-block;
+	width: 80%;	
+	font-size: 15px;
+	vertical-align: top;
+}
+
+
+/****************************************************/
+/*styles pour le footer                             */
+/****************************************************/
+footer {
+	background-color: skyblue;
+	height: 120px;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+footer p{
+	padding: 15px;
+	padding-top: 15px;
+}
+
+/****************************************************/
+/*styles pour le logo de M2L                        */
+/****************************************************/
+.logo {
+	display: inline-block;
+	font-size: 50px;
+	color: white;
+	margin-left: 10px;
+}
+
+
+/****************************************************/
+/*styles pour le bandeau                            */
+/****************************************************/
+.bandeau {
+  height: 80%;
+  background: linear-gradient(rgba(0, 0, 150, 0.5), rgba(0, 0, 200, 0.6)), url("../images/header2.jpg");
+}
+
+
+/****************************************************/
+/*styles pour le menu principal                     */
+/****************************************************/
+nav.menuPrincipal{
+	text-align: right;
+	background-color: skyblue;
+	font-size: 0px;
+}
+
+nav.menuPrincipal ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+nav.menuPrincipal ul li {
+    display: inline-block;
+    text-align: center;
+    min-width: 140px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav.menuPrincipal ul li a {
+  text-decoration: none;
+  color: white; 
+}
+
+nav.menuPrincipal ul li a:hover {
+  color: grey;
+}
+
+nav.menuPrincipal ul li.actif {
+  	background-color: ivory;
+  	color: black;
+  	padding: 10px;
+}
+
+
+/****************************************************/
+/*styles pour le page d'accueil                     */
+/****************************************************/ 
+.texteAccueil {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	font-size: 17px;
+}
+
+.texteAccueil h1{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	text-align: center;
+}
+
+.texteAccueil p{
+	padding-top: 20px;
+	text-align: justify;
+}
+
+.images {
+	text-align: center;
+	padding-top: 30px;
+}
+.images img{
+	height: 150px;
+	margin: 10px;
+	padding-bottom: 100px;
+}
+
+/****************************************************/
+/*styles pour la zone navigation gauche             */
+/****************************************************/ 
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+}
+
+.sidenav{
+	position: fixed;
+ 	top: 200px;
+ 	left: 0px;
+}
+
+.sidenav .titreListe{
+	color: black; 
+	padding: 30px;
+	font-weight: bold;
+ 	font-size: 22px; 
+}
+ 
+.sidenav ul{
+  list-style: none;
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.sidenav li a {
+  text-decoration: none;
+  color: grey; 
+}
+
+.sidenav li a:hover {
+  color: blue;
+}
+
+/****************************************************/
+/*styles pour les rubriques de la zone droite       */
+/****************************************************/ 
+
+.articles{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 150px;		
+}
+
+.article .titre{
+	color: blue;
+	padding: 20px;
+}
+
+.article .corps{
+	background-color: #b2ebf2; 
+	text-align: justify;
+	padding: 15px;
+}
+
+ .article .corps .col1{
+	display: inline-block;
+	width: 28%;
+	vertical-align: middle;
+}
+
+.article .corps .col2{
+	display: inline-block;
+	width: 70%;
+	vertical-align: middle;
+}
+
+.article .corps .col2 img{
+	width: 100%;
+}
+
+/****************************************************/
+/*styles pour les tableaux de la zone droite        */
+/****************************************************/ 
+
+.article .corps .tab{
+	width: 100%;
+	font-size: 0.8em;
+	border: 1px solid blue;
+	text-align: center;
+}
+
+.article .corps .tab thead{
+	background-color: skyblue;
+}
+
+.article .corps .tab .pair{
+	background-color: white;
+}
+
+
+.contentConnexion{
+	background-color: #f0f0f0;
+ 	text-align: center;
+ 	padding-top: 150px;
+}
+
+.connexion {
+	display: inline-block;
+	font-size: 15px;
+	width: 400px;
+	height: 240px;
+	border: 1px solid black;
+}
+
+.connexion .titre{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: skyblue;
+	padding: 16px;
+}
+
+
+.connexion .ligne{
+    padding: 14px;
+    text-align: center;
+}
+
+.connexion .ligne label {
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.connexion .ligne input {
+    width: 200px;
+}
+
+.connexion .ligne input[type=submit]{
+	display: inline-block;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.connexion .ligne label.message{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+}
+
+/****************************************************/
+/*           Style pour les formations			    */
+/****************************************************/
+
+.zoneFormations {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.listeFormations {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.listeFormations li {
+    background-color: #e0f7fa;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.aucuneFormation {
+    color: red;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.btnDemandes,
+.btnAjouter 
+ {
+    margin-top: 40px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnDemandes:hover {
+    background-color: deepskyblue;
+}
+
+.btnAjouter:hover {
+    background-color: deepskyblue;
+}
+
+.boutonsFormations {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/****************************************************/
+/*      Style pour les ajouts de formations         */
+/****************************************************/
+
+.zoneAjoutFormation {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+    font-size: 18px;
+}
+
+.zoneAjoutFormation h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.ligneForm {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ligneForm label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+    white-space: nowrap; 
+}
+
+.ligneForm input[type="text"],
+.ligneForm input[type="email"],
+.ligneForm input[type="date"],
+.ligneForm textarea {
+    /* use flex so inputs fill remaining space beside the fixed-width label */
+    flex: 1 1 auto;
+    width: auto;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.btnValider {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: mediumseagreen;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnValider:hover {
+    background-color: seagreen;
+}
+
+.message {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/****************************************************/
+/*   Style pour la modification de formation        */
+/****************************************************/
+
+.zoneModifierFormation {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 18px;
+}
+
+.zoneModifierFormation h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #333;
+}
+
+.ligneForm {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ligneForm label {
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+    color: #444;
+}
+
+.ligneForm input[type="text"],
+.ligneForm input[type="email"],
+.ligneForm input[type="number"],
+.ligneForm input[type="date"],
+.ligneForm textarea {
+    flex: 1 1 auto;
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.ligneForm textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btnValider {
+    margin: 40px auto 0;
+    display: block;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnValider:hover {
+    background-color: deepskyblue;
+}
+
+.message {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/****************************************************/
+/*   Boutons Modifier et Supprimer                  */
+/****************************************************/
+
+.btnModifier,
+.btnSupprimer {
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.btnModifier {
+    background-color: skyblue; 
+    color: white;
+}
+
+.btnModifier:hover {
+    background-color: deepskyblue;
+}
+
+.btnSupprimer {
+    background-color: #ee8377; 
+    color: white;
+}
+
+.btnSupprimer:hover {
+    background-color: #c2584d;
+}
+
+
+/*Voir les demandes*/
+
+.zoneBoutonGlobal {
+    position: absolute;
+    top: 55px;
+    left: 6px;
+    z-index: 10;
+}
+
+.btnGlobalDemandes {
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #b0b2b6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btnGlobalDemandes:hover {
+    background-color: #919bad;
+}
+
+/* Bouton avec badge de notification */
+
+/* .btnWithBadge {
+    position: relative;
+    display: inline-block;
+}
+
+.badgeNotif {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 7px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+} */
+
+/*  */
+
+.message {
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Summary error banner when multiple errors exist */
+.message.messageErreur {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+
+.message:contains("✅") {
+    background-color: #dff0d8;
+    color: #ff0095;
+    /* color: #3c763d; */
+}
+
+.message:contains("❌") {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+/* */
+
+.statutDemande {
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.statutAttente {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.statutValidee {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.statutRefusee {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.statutInconnu {
+    background-color: #e2e3e5;
+    color: #6c757d;
+}
+
+.btnAnnuler {
+    background-color: #ee8377;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.btnAnnuler:hover {
+    background-color: #c2584d;
+
+}
+
+/* */
+
+.titrePage {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding-top: 5%;
+    color: #2c3e50;
+}
+
+.formFiltres {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.filtres label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filtres select {
+    margin-right: 20px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.btnFiltrer {
+    padding: 8px 16px;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnFiltrer:hover {
+    background-color: #2980b9;
+}
+
+.tableContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tableDemandes {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tableDemandes th, .tableDemandes td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.tableDemandes th {
+    background-color: skyblue;
+    color: white;
+}
+
+.tableDemandes tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Styles spécifiques au tableau des intervenants */
+.tableauIntervenants {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.tableauIntervenants th,
+.tableauIntervenants td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.tableauIntervenants thead th {
+    background: #f5f9fb;
+    color: #333;
+    font-weight: 700;
+}
+
+.tableauIntervenants tbody tr:hover {
+    background-color: #f7fbfc;
+}
+
+.tableauIntervenants td.actions {
+    width: 220px; /* laisser de la place pour les boutons */
+}
+
+.actionsContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btnModifierSmall, .btnSupprimerSmall {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+.btnModifierSmall {
+    background-color: #2196f3;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btnModifierSmall:hover { background-color: #1976d2; }
+
+.btnSupprimerSmall {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btnSupprimerSmall:hover { background-color: #d32f2f; }
+
+/* Form inline inside actions: remove default margins */
+.inlineFormDelete { display: inline-block; margin: 0; }
+
+/* Responsive: empiler les infos sur petits écrans */
+@media (max-width: 800px) {
+    .tableauIntervenants thead { display: none; }
+    .tableauIntervenants, .tableauIntervenants tbody, .tableauIntervenants tr, .tableauIntervenants td { display: block; width: 100%; }
+    .tableauIntervenants tr { margin-bottom: 12px; border: 1px solid #eee; border-radius: 6px; padding: 8px; }
+    .tableauIntervenants td { padding: 8px 12px; text-align: left; }
+    .tableauIntervenants td.actions { text-align: right; }
+}
+
+.statut {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.statut.validé {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.statut.refusé {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.statut.en_attente {
+    background-color: #f1c40f;
+    color: black;
+}
+
+.btnAction {
+    padding: 6px 12px;
+    margin: 2px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnAction.valider {
+    color: #2ecc71;
+}
+
+.btnAction.refuser {
+    color: #e74c3c;
+}
+
+.btnAction:hover {
+    text-decoration: underline;
+}
+
+/* */
+
+.btnInscription {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnConsulterDemande{
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnRetour {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnInscription:hover{
+    background-color: deepskyblue;
+}
+
+.btnConsulterDemande:hover
+{
+    background-color: deepskyblue;
+}
+
+.btnRetour:hover {
+    background-color: deepskyblue;
+}
+
+.messageErreur {
+    display: block;
+    color: #a94442; /* texte d'erreur sombre */
+    background-color: #f2dede; /* fond léger rouge */
+    border: 1px solid #ebccd1;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin: 8px 0 12px 150px; /* aligner sous le champ (label width = 150px) */
+    font-weight: bold;
+}
+
+.zoneRetour {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btnRetour {
+    background-color: skyblue;
+    padding: 8px 16px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnRetour:hover{
+    background-color: deepskyblue;
+}
+
+/****************************************************/
+/*           Style pour les intervenants		    */
+/****************************************************/
+
+.zoneIntervenants {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 100px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.listeIntervenants {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.listeIntervenants li {
+    background-color: #e0f7fa;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.aucunIntervenant {
+    color: red;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.btnGestionIntervenants,
+.btnAjouterIntervenant {
+    margin-top: 40px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnGestionIntervenants:hover,
+.btnAjouterIntervenant:hover {
+    background-color: deepskyblue;
+}
+
+.boutonsIntervenants {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Styles pour les informations des intervenants */
+.infoIntervenant {
+    margin: 8px 0;
+}
+
+.infoIntervenant strong {
+    color: #00796b;
+}
+
+.statutIntervenant {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.statutIntervenant.salarie {
+    background-color: #4caf50;
+    color: white;
+}
+
+.statutIntervenant.benevole {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Actions sur les intervenants */
+.actionsIntervenant {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btnModifierIntervenant,
+.btnSupprimerIntervenant {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnModifierIntervenant {
+    background-color: #2196f3;
+    color: white;
+}
+
+.btnModifierIntervenant:hover {
+    background-color: #1976d2;
+}
+
+.btnSupprimerIntervenant {
+    background-color: #f44336;
+    color: white;
+}
+
+.btnSupprimerIntervenant:hover {
+    background-color: #d32f2f;
+}
+
+/* Style pour la modification d'intervenant (copié de .zoneModifierFormation) */
+.zoneModifierIntervenant {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 80px;
+    font-size: 18px;
+}
+
+.zoneModifierIntervenant h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #333;
+}
+
+.zoneModifierIntervenant .ligneForm {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.zoneModifierIntervenant .ligneForm label {
+    width: 150px;
+    text-align: right;
+    font-weight: bold;
+    color: #444;
+}
+
+.zoneModifierIntervenant .ligneForm input[type="text"],
+.zoneModifierIntervenant .ligneForm input[type="number"],
+.zoneModifierIntervenant .ligneForm input[type="date"],
+.zoneModifierIntervenant .ligneForm textarea,
+.zoneModifierIntervenant .ligneForm input[type="email"],
+.zoneModifierIntervenant .ligneForm select {
+    flex: 1 1 auto;
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.zoneModifierIntervenant .ligneForm textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.zoneModifierIntervenant .btnValider {
+    margin: 40px auto 0;
+    display: block;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.zoneModifierIntervenant .btnValider:hover {
+    background-color: deepskyblue;
+}
+
+.zoneModifierIntervenant .btnAnnuler {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Cacher les éléments d'erreur vides (évite un bloc rouge sans texte) */
+.messageErreur:empty {
+    display: none !important;
+}
